@@ -1,9 +1,9 @@
 # About NodeJS-Reverse-Powershell-Websocket
 
-This is a NodeJS server with the ability to pass through Powershell commands to a victim.
+This is a http/websocket server written in Nodejs with the ability to pass through Powershell commands to a victim.
 
 ## Features
-* NodeJS server that handles messages from the attacker(s) & victim(s)
+* Nodejs server that handles messages from the attacker(s) & victim(s)
 * Simple HTTP admin panel where you can send Powershell commands
 * Passworded access for the websocket admin side
 * Ability to decode a byte array response from Powershell into a binary download (for quick downloading of data)
@@ -11,7 +11,7 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
 * Powershell catches errors that may occur with commands & reports them back to the websocket
 
 ## Requirements
-* A server capable of a NodeJS environment with Websocket package
+* A server capable of a Nodejs environment with Websocket package
 * Remote PC (victim) with Windows 10/11
 
 ## Known Issues
@@ -20,7 +20,7 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
 
 ## Installation
  1. Open ports 3394 (default websocket) & 3395 (default http) on your server
- 2. Create a NodeJS environment with Websocket package
+ 2. Create a Nodejs environment with Websocket package
  3. Copy files from the repo into your environment
  4. Check the settings & change password in the config file
  5. Start your node server: "node index.js" or "forever start index.js"
