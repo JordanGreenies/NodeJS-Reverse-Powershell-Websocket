@@ -32,16 +32,16 @@ getUniqueID = function() {
 function chatLogLine(msg,isImage,isDownloadable) {
     if (msg == "") msg = "{empty response}";
     var today = new Date();
-	var currentHours = ("0" + today.getHours()).slice(-2);
-	var currentMinutes = ("0" + today.getMinutes()).slice(-2);
+    var currentHours = ("0" + today.getHours()).slice(-2);
+    var currentMinutes = ("0" + today.getMinutes()).slice(-2);
     var time = currentHours + ":" + currentMinutes;
     var dId = getUniqueID();
     var newDiv = '<div id="' + dId + '" class="line system"><span class="timestamp">' + time + '</span><span class="message">';
-	if(isImage) newDiv = newDiv +'<pre><img width="100px" src="data:image/jpeg;charset=utf-8;base64, ' + btoa(msg) + '" alt="" /></pre>';
-	else newDiv = newDiv + '<pre>' + htmlEntities(msg) + '</pre>';
-	if(isDownloadable)newDiv = newDiv + '<a href="data:text/plain;base64,'+btoa(unescape(encodeURIComponent(msg)))+'" download="data">Download data (' + msg.length + ' bytes)</a>';
-	newDiv = newDiv + "</span></div>";
-	$(".active_tab").append(newDiv);
+    if(isImage) newDiv = newDiv +'<pre><img width="100px" src="data:image/jpeg;charset=utf-8;base64, ' + btoa(msg) + '" alt="" /></pre>';
+    else newDiv = newDiv + '<pre>' + htmlEntities(msg) + '</pre>';
+    if(isDownloadable)newDiv = newDiv + '<a href="data:text/plain;base64,'+btoa(unescape(encodeURIComponent(msg)))+'" download="data">Download data (' + msg.length + ' bytes)</a>';
+    newDiv = newDiv + "</span></div>";
+    $(".active_tab").append(newDiv);
     document.getElementById(dId).scrollIntoView();
 }
 
@@ -217,7 +217,7 @@ ws.onmessage = function(evt) {
             connectedUsers = obj['connected'];
             updateConnected();
         } else if (obj.cmd == "cmd_response") {
-			SortResponse(obj.data);
+            SortResponse(obj.data);
         } else if (obj.cmd == "password_invalid") {
             chatLogLine(evt.data,false);
         }
