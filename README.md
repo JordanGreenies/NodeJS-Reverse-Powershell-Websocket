@@ -11,8 +11,8 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
 * Powershell catches errors that may occur with commands & reports them back to the websocket
 
 ## Requirements
-* Windows 10/11
-* NodeJS environment with Websocket package
+* A server capable of a NodeJS environment with Websocket package
+* Remote PC (victim) with Windows 10/11
 
 ## Installation
  1. Open ports 3394 (default websocket) & 3395 (default http) on your server
