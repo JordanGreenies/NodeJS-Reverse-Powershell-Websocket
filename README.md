@@ -32,4 +32,4 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
  3. Check admin panel for connection
 
 ## Preview
-![usage](https://i.imgur.com/bQw8NJH.gif)
+![usage]()
