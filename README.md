@@ -1,4 +1,4 @@
-# About Reverse-Powershell-Websocket
+# About NodeJS-Reverse-Powershell-Websocket
 
 This is a NodeJS server with the ability to pass through Powershell commands to a victim.
 
@@ -32,4 +32,4 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
  3. Check admin panel for connection
 
 ## Preview
-![usage]()
+![usage](https://i.imgur.com/2FIrXle.gif)
