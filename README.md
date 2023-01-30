@@ -33,8 +33,4 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
 
 ## Preview
 #### 1
-![settings]()
-#### 2
-![gateway]()
-#### 3
-![checkout]()
+![usage](https://i.imgur.com/bQw8NJH.gif)
