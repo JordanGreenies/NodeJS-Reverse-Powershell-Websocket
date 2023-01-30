@@ -1,5 +1,5 @@
 {
 	"websocketPort" : 3394,
 	"httpPort" : 3395,	
-    "password" : "Password"
+   	"password" : "Password"
 }
