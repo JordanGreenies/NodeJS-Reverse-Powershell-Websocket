@@ -14,6 +14,9 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
 * A server capable of a NodeJS environment with Websocket package
 * Remote PC (victim) with Windows 10/11
 
+## Known Issues
+* Due to the text encoding it's hard to return binaries from the Powershell response without them being malformed
+
 ## Installation
  1. Open ports 3394 (default websocket) & 3395 (default http) on your server
  2. Create a NodeJS environment with Websocket package
