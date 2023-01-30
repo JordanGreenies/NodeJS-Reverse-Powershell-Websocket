@@ -16,6 +16,7 @@ This is a NodeJS server with the ability to pass through Powershell commands to 
 
 ## Known Issues
 * Due to the text encoding it's hard to return binaries from the Powershell response without them being malformed
+* If you manage to crash/hang Powershell, it's game over.
 
 ## Installation
  1. Open ports 3394 (default websocket) & 3395 (default http) on your server
