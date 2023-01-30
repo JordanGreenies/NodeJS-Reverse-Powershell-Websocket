@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/socket.js"></script>
+</head>
+
+<body>
+    <div id="chat">
+        <div id="roomspanel">
+            <h1>Powershell Cmd</h1>
+            <nav>
+                <ul id="rooms">
+                    <li id="system" class="roomtab active">Server</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="central">
+            <div id="userlist">
+            </div>
+            <div id="messagespanel">
+                <div id="messages">
+                    <div class="tab active_tab" id="Server_tab">
+                    </div>
+                </div>
+                <div id="inputbox">
+                    <form>
+                        <textarea id="inputline"></textarea>
+                        <button onclick="sendCmdToTarget(document.getElementById('inputline').value);document.getElementById('inputline').value = '';" class="btn btn-secondary" type="button" style="position:absolute;bottom:1px;right:1px;">
+                            <i class="fa fa-code"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

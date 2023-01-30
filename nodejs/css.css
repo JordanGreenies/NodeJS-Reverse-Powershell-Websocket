@@ -1,0 +1,217 @@
+body {
+    background-color: #111;
+    color: #ddd;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+a {
+    color: #abc;
+    text-decoration: none;
+}
+
+#roomspanel {
+    height: 40px;
+    border-bottom: 1px solid #369;
+    position: relative;
+}
+
+#roomspanel h1 {
+    margin: 0;
+    font-size: 14px;
+    padding: 0 15px;
+    line-height: 40px;
+    color: #999;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+#roomspanel ul {
+    list-style: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 152px;
+}
+
+#roomspanel ul li {
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 20px;
+    line-height: 40px;
+    background-color: #444;
+    color: #aaa;
+    box-shadow: inset 0 -15px 10px -10px #000;
+    text-shadow: -1px 1px 2px #000;
+}
+
+#roomspanel ul li:hover {
+    background-color: #999;
+    color: #000;
+    text-shadow: -1px 1px 2px #fff;
+    box-shadow: inset 0 -5px 10px -5px #000;
+}
+
+#roomspanel ul li.active {
+    background-color: #369;
+    color: #fff;
+    box-shadow: inset 0 -5px 10px -5px #000;
+}
+
+#roomspanel ul li.active:hover {
+    box-shadow: inset 0 -5px 10px -5px #000;
+    text-shadow: -1px 1px 2px #000;
+}
+
+#roomspanel ul li:active {
+    background-color: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+#central {
+    position: relative;
+}
+
+#userlist {
+    background-color: #222;
+    width: 150px;
+    border-right: 1px solid #000;
+    bottom: 0;
+    top: 41px;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#userlist ul {
+    list-style: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#userlist ul li {
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+#userlist ul li:hover {
+    background-color: #000;
+}
+
+#messagespanel {}
+
+#messages {
+    position: fixed;
+    background-color: #333;
+    top: 41px;
+    bottom: 40px;
+    right: 0;
+    left: 151px;
+    padding: 2px 10px;
+    vertical-align: bottom;
+}
+
+#messages>div {
+    position: absolute;
+    bottom: 5px;
+    max-height: 100%;
+    overflow-x: none;
+    overflow-y: auto;
+    right: 0;
+    left: 0;
+}
+
+.line {
+    padding: 0 10px;
+    border-bottom: 1px dashed #292929;
+    font-size: 14px;
+    clear: both;
+}
+
+.line .timestamp {
+    float: left;
+    display: inline-block;
+    width: 50px;
+    color: #aaa;
+}
+
+.system.line {
+    color: #777;
+}
+
+.system.line .timestamp {
+    color: #777;
+}
+
+.line .user {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    text-align: right;
+    overflow: inherit;
+    white-space: nowrap;
+}
+
+pre {
+    color: #6c757d;
+}
+
+.line .message {
+    display: block;
+    position: relative;
+    margin-left: 160px;
+    padding-top: 18px;
+}
+
+.system.line .message {
+    display: block;
+    position: relative;
+    margin-left: 50px;
+}
+
+#inputbox {
+    position: fixed;
+    height: 40px;
+    bottom: 0;
+    left: 151px;
+    background-color: #555;
+    right: 0;
+    border-top: 1px solid #000;
+}
+
+#inputbox form {
+    margin: 0;
+    padding: 0;
+}
+
+#inputbox textarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #222;
+    box-shadow: inset 0 0 6px #000;
+    padding: 4px 4px 4px 20px;
+    margin: 0;
+    color: #fff;
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 12px;
+}
+
+#inputbox textarea:focus {
+    background-color: #333;
+}
+
+#inputbox:before {
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    color: #f90;
+    content: ">";
+    z-index: 1;
+}
